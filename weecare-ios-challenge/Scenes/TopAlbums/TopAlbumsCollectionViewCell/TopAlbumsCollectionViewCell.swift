@@ -51,12 +51,14 @@ final class TopAlbumsCollectionViewCell: UICollectionViewCell {
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.layoutMargins = UIEdgeInsets(top: 5, left: 10, bottom: 0, right: 10)
         
-        let albumFontSize: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 22 : 16
+        let albumFontSize: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 22 : 14
         albumLabel.numberOfLines = 2
+        albumLabel.lineBreakMode = .byWordWrapping
         albumLabel.font = UIFont.systemFont(ofSize: albumFontSize, weight: .bold)
 
         let artistFontSize: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 18 : 12
-        artistNameLabel.numberOfLines = 2
+        artistNameLabel.numberOfLines = 1
+        albumLabel.lineBreakMode = .byTruncatingTail
         artistNameLabel.font = UIFont.systemFont(ofSize: artistFontSize)
     }
     
