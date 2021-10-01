@@ -36,8 +36,8 @@ final class TopAlbumsCollectionViewCell: UICollectionViewCell {
         
         layer.shadowColor = UIColor.lightGray.cgColor
         layer.shadowOffset = CGSize(width: 1.5, height: 1.5)
-        layer.shadowRadius = 2.0
-        layer.shadowOpacity = 0.5
+        layer.shadowRadius = 1.5
+        layer.shadowOpacity = 0.4
         layer.masksToBounds = false
         layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
     }
@@ -49,13 +49,13 @@ final class TopAlbumsCollectionViewCell: UICollectionViewCell {
         stackView.distribution = .fillEqually
         stackView.backgroundColor = .secondarySystemBackground
         stackView.isLayoutMarginsRelativeArrangement = true
-        stackView.layoutMargins = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        stackView.layoutMargins = UIEdgeInsets(top: 5, left: 10, bottom: 0, right: 10)
         
-        let albumFontSize: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 20 : 16
+        let albumFontSize: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 22 : 16
         albumLabel.numberOfLines = 2
         albumLabel.font = UIFont.systemFont(ofSize: albumFontSize, weight: .bold)
-        
-        let artistFontSize: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 16 : 12
+
+        let artistFontSize: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 18 : 12
         artistNameLabel.numberOfLines = 2
         artistNameLabel.font = UIFont.systemFont(ofSize: artistFontSize)
     }
@@ -65,8 +65,6 @@ final class TopAlbumsCollectionViewCell: UICollectionViewCell {
         newAlbumIcon.frame = CGRect(x: contentView.frame.width - iconSize, y: 0, width: iconSize, height: iconSize)
         newAlbumIcon.tintColor = .systemYellow
     }
-    
-    
     
     private func configureCellLayout() {
         albumImageView.backgroundColor = .lightGray.withAlphaComponent(0.5)

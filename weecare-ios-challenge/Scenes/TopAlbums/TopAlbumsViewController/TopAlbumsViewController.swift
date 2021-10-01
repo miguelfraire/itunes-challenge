@@ -9,7 +9,6 @@ import UIKit
 
 final class TopAlbumsViewController: DataLoadingViewController {
     
-    
     private var viewModel: TopAlbumsViewModel
     private var collectionView: UICollectionView!
     
@@ -79,7 +78,7 @@ extension TopAlbumsViewController: UICollectionViewDelegate, UICollectionViewDat
         let cellAlbum = viewModel.getAlbum(at: indexPath)
         cell.artistNameLabel.text = cellAlbum.artistName
         cell.albumLabel.text = cellAlbum.name
-        cell.newAlbumIcon.image = cellAlbum.releaseDate.isInThisMonth ? SFSybmols.newAlbum : nil
+        cell.newAlbumIcon.image = cellAlbum.releaseDate.isInThisWeek ? Images.newAlbumIcon : nil
         
         if let imageURL = cellAlbum.artworkUrl100 {
             if let image = viewModel.cache.object(forKey: imageURL as NSString) {

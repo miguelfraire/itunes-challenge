@@ -18,7 +18,7 @@ enum FlowLayout {
             itemWidth = availableWidth / numberOfItemsPerRow
 
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth * 1.4)
+        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth * 1.5)
         flowLayout.sectionInsetReference = .fromSafeArea
         flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
         flowLayout.scrollDirection = .vertical

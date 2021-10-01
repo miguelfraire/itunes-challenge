@@ -11,6 +11,7 @@
 		4930F74D26FD0ADA0095E409 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930F74C26FD0ADA0095E409 /* Date+Ext.swift */; };
 		4930F75226FD9A1E0095E409 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930F75126FD9A1E0095E409 /* UIView+Ext.swift */; };
 		4930F75C26FDA46C0095E409 /* TopAlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930F75B26FDA46C0095E409 /* TopAlbumsViewModel.swift */; };
+		498B420527068A5000A0D20C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B420427068A5000A0D20C /* Images.swift */; };
 		49FA5EE026FEC22F00C0BBB4 /* weecare_ios_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA5EDF26FEC22F00C0BBB4 /* weecare_ios_challengeTests.swift */; };
 		49FA5EE826FF997100C0BBB4 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA5EE726FF997100C0BBB4 /* SFSymbols.swift */; };
 		49FA5EEB26FF9BC100C0BBB4 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA5EEA26FF9BC100C0BBB4 /* FlowLayout.swift */; };
@@ -44,6 +45,7 @@
 		4930F74C26FD0ADA0095E409 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		4930F75126FD9A1E0095E409 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		4930F75B26FDA46C0095E409 /* TopAlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsViewModel.swift; sourceTree = "<group>"; };
+		498B420427068A5000A0D20C /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		49FA5EDD26FEC22F00C0BBB4 /* weecare-ios-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weecare-ios-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FA5EDF26FEC22F00C0BBB4 /* weecare_ios_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weecare_ios_challengeTests.swift; sourceTree = "<group>"; };
 		49FA5EE726FF997100C0BBB4 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				49FA5EE726FF997100C0BBB4 /* SFSymbols.swift */,
+				498B420427068A5000A0D20C /* Images.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				CED2A3F526F017330093C1F3 /* Network.swift in Sources */,
 				CED2A3E626EFAA5C0093C1F3 /* Album.swift in Sources */,
 				CED2A3EB26EFB7210093C1F3 /* APIErrors.swift in Sources */,
+				498B420527068A5000A0D20C /* Images.swift in Sources */,
 				CEE8744A26E818C000A269DA /* AppDelegate.swift in Sources */,
 				4930F75C26FDA46C0095E409 /* TopAlbumsViewModel.swift in Sources */,
 				CED2A3E826EFABD10093C1F3 /* APIRequest.swift in Sources */,
@@ -559,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3VGAB6GLMA;
 				INFOPLIST_FILE = "weecare-ios-challenge/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3VGAB6GLMA;
 				INFOPLIST_FILE = "weecare-ios-challenge/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
